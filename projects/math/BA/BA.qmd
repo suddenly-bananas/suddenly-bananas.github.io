@@ -1,0 +1,9 @@
+---
+title: "Bachelor Thesis"
+description: "Topological Complexity and Related Invariants. [Topological Robotics]"
+sort_order: 90
+image: BA.png
+---
+
+[Click here to download the PDF of my bachelor thesis.](BA.pdf)
+

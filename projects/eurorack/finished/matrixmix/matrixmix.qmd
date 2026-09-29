@@ -1,0 +1,9 @@
+---
+title: "Matrix mixer"
+image: images/dummy.PNG
+sort_order: 60
+---
+
+This is basically just a realization of the matrix mixer II circuit from the [Doepfer A-100 DIY page](https://doepfer.de/DIY/a100_diy.htm), but I think it looks cool, so it deserves its own page.
+
+![](images/panel.png)

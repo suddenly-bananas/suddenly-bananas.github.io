@@ -1,0 +1,22 @@
+---
+title: "Looking for jobs/projects"
+---
+
+I'm a Berlin-based mathematician, engineer, synthesizer builder and electronic musician. Here's my life story:
+
+- I started out with studying electrical engineering and information technology at OTH Amberg-Weiden.
+- Got interested in university-level math through a course in DSP as a gateway drug.
+- After finishing my B. Eng., I started studying mathematics at TU Berlin "just to try it out".
+- Fast forward some years later, I have now finished my B. Sc. and M. Sc. in mathematics :) 
+- During my time as a math-apprentice, I used my skills from engineering to design and build Eurorack synthesizer modules on my own. As a neat side-effect, I also make electronic music with my own instruments for some time now.
+
+Currently I am working with the lovely people at [KOMA Elektronik](https://koma-elektronik.com) in the manufacturing team, for which I am really glad that it worked out in the way it did. Unfortunately, working purely in manufacturing does not really align with my long-term goals, so we will part ways soon :'( 
+
+I am now looking for my next step in **research and development**, either:
+
+- In the field of electronic musical instruments, audio technology or adjacent topics, where I can combine my background in mathematics, engineering, and music;
+- Or in one of the numerous mathematical areas that matter to me, and in particular their applications. My main interests here lie in algebraic topology, topological data analysis, computational geometry/topology, differential geometry, harmonic analysis and algebra in general.
+
+[Here you can find some projects I'm currently working on or that I did in the past.](projects.qmd)
+
+You can reach me at: [contact.sandro.erras@posteo.de](mailto:contact.sandro.erras@posteo.de)

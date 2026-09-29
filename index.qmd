@@ -1,0 +1,45 @@
+---
+title: ""
+format:
+  html:
+    code-fold: true
+---
+
+
+::: {.column-margin}
+
+![This is me.](./images/cat.jpg){width=100%}
+
+:::
+
+```
+  ________                      __  .__                           
+ /  _____/______   ____   _____/  |_|__| ____    ____  ______     
+/   \  __\_  __ \_/ __ \_/ __ \   __\  |/    \  / ___\/  ___/     
+\    \_\  \  | \/\  ___/\  ___/|  | |  |   |  \/ /_/  >___ \      
+ \______  /__|    \___  >\___  >__| |__|___|  /\___  /____  > /\  
+        \/            \/     \/             \//_____/     \/  )/  
+___________                         .__  .__                      
+\__    ___/___________ ___  __ ____ |  | |  |   ___________       
+  |    |  \_  __ \__  \\  \/ // __ \|  | |  | _/ __ \_  __ \      
+  |    |   |  | \// __ \\   /\  ___/|  |_|  |_\  ___/|  | \/      
+  |____|   |__|  (____  /\_/  \___  >____/____/\___  >__|         
+                      \/          \/               \/             
+```
+
+You entered the realm of some guy who likes math and bleepy bloopy sound machines :)
+
+<br>
+[I'm currently looking for a job!](lookingforjob.qmd)
+
+<br>
+Contact me: [contact.sandro.erras@posteo.de](mailto:contact.sandro.erras@posteo.de)
+
+<br>
+The majority of this website is still
+
+```
+•._.••´¯``•.¸¸.•`   🎀  𝓌❁𝓇𝓀  𝒾𝓃  𝓅𝓇🏵𝑔𝓇𝑒𝓈𝓈  🎀   `•.¸¸.•``¯´••._.•
+```
+
+(so please have some mercy with my poor soul)

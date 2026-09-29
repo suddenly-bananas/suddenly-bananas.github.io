@@ -1,0 +1,14 @@
+---
+title: "Projects"
+
+listing:
+  contents: projects/*/*.qmd
+  type: grid
+  grid-columns: 2
+  fields: [title]
+  sort: title asc
+  sort-ui: false
+  filter-ui: false
+  
+page-layout: full
+---

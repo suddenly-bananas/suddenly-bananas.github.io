@@ -1,0 +1,9 @@
+---
+title: "Small seminar write-up on braid groups"
+sort_order: 80
+image: braids_seminar.PNG
+---
+
+This is a small write-up on the geometric/algebraic/topological nature of braid groups.
+
+[Click here to download the PDF.](braids_seminar.pdf)

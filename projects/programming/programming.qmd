@@ -1,0 +1,17 @@
+---
+title: "Projects >> Programming"
+
+listing:
+  contents: "*/*.qmd"
+  # type: grid
+  # grid-columns: 2
+  fields: [image, title, description]
+  sort: title asc
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+---
+
+```
+¤¸¸.•´¯`•¸¸.•..>>   🎀  𝓊𝓃𝒹𝑒𝓇 𝒸♡𝓃𝓈𝓉𝓇𝓊𝒸𝓉𝒾🌞𝓃  🎀   >>..•.¸¸•`¯´•.¸¸¤
+```

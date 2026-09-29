@@ -1,0 +1,13 @@
+---
+title: "CV-to-MIDI converter"
+image: ./images/dummypic.png
+sort_order: 90
+---
+
+Personally, I love the [Korg Volca Drum](https://www.korg.com/de/products/dj/volca_drum/). It has been the centerpiece of my setup for a long time now. In my opinion it has a potent sequencer and a versatile sound engine. But, as a modular addict, one thing I dearly miss is CV-control over the parameters. Luckily, it has a MIDI-input and controllable parameters via MIDI-CC. This was my initial motivation to design a CV-to-MIDI-module.
+
+In the end, the module should be usable for any MIDI-controllable device, so I decided to make the module in itself "modular": There should be one main-module handling the MIDI-messages, while the actual CV-input and maybe also offset generation is handled by additional expander modules. These expanders connect to the main module via ribbon cable on the back.
+
+```
+¤¸¸.•´¯`•¸¸.•..>>   🎀  𝓊𝓃𝒹𝑒𝓇 𝒸♡𝓃𝓈𝓉𝓇𝓊𝒸𝓉𝒾🌞𝓃  🎀   >>..•.¸¸•`¯´•.¸¸¤
+```

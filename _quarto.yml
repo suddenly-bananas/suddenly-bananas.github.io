@@ -1,0 +1,37 @@
+project:
+  type: website
+
+website:
+  title: "Sandro Erras"
+  description: "descr"
+  navbar:
+    left:
+      # - href: index.qmd
+      #   text: Home
+      - href: lookingforjob.qmd
+        text: I'm looking for a job!
+      - text: Stuff that I have done
+        menu:
+          - text: Overview
+            href: projects.qmd
+          - text: Eurorack
+            href: projects/eurorack/eurorack.qmd
+          - text: Synthesizer DIY
+            href: projects/synthdiy/synthdiy.qmd
+          - text: Math
+            href: projects/math/math.qmd
+          - text: Programming
+            href: projects/programming/programming.qmd
+      - text: Music
+        href: music/music.qmd
+    right:
+      - icon: github
+        href: https://github.com/suddenly-bananas
+
+format:
+  html:
+    theme: 
+      dark: darkly
+      light: flatly
+    css: styles.css
+    toc: true

@@ -1,0 +1,10 @@
+---
+title: "2HP 3-channel mixer"
+# description: "2HP 3-channel mixer"
+image: images/dummy.png
+sort_order: 70
+---
+
+This is a module I initially desidgned due to a request from a friend, who had a quite compact rack at that time. I took it as a fun challenge to design a compact and slim module. At its core, it's a simple (DC-coupled) 3 input mixer with a bicolor LED at the output. The LED is useful when you use the module to mix CV sources. Also, on the back of the module i added solder jumpers with which channel 1 can be normalized to +12V, while channel 2 can be normalized to -12V. This can prove useful when mixing CV signals. 
+
+If I ever make a new version of this module, I would move the output jack to the top for more front panel stability.

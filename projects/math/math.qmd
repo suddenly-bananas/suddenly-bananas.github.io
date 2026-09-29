@@ -1,0 +1,22 @@
+---
+title: "Projects >> Math"
+
+listing:
+  - id: writings
+    contents: 
+      - "*/*.qmd"
+    # type: grid
+    # grid-columns: 2
+    fields: [image, title, description]
+    sort: "sort_order desc"
+    sort-ui: false
+    filter-ui: false
+page-layout: full
+
+format:
+  html:
+    css: math.css
+--- 
+
+:::{#writings}
+:::

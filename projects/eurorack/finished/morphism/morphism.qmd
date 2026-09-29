@@ -1,0 +1,28 @@
+---
+title: "Morphism"
+description: "Envelope generator based on the Befaco Rampage."
+image: ./images/morphism_PCB.jpg
+sort_order: 90
+
+format:
+  html:
+    css: morphism.css
+---
+
+This is a slight redesign of one channel of the Befaco Rampage in an 8HP-format. The challenge here was making the PCB-layout, since I was still using THT-components at that time, so a stack of 3 PCBs was necessary. After soldering and building 4 units of this module, I swore to myself to never design modules with THT-components anymore and to finally move on to SMD-components and SMD assembly services.
+
+:::{.masonry}
+
+![](./images/morphism_panel.jpg)
+
+![](./images/morphism_PCB.jpg)
+
+![](./images/morphism_finished.jpg)
+
+![](./images//morphism_finished2.jpg)
+
+![](./images/morphism_side1.jpg)
+
+![](./images//morphism_side2.jpg)
+
+:::
