@@ -1,0 +1,43 @@
+[
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/eurorack/eurorack.html",
+      "/projects/math/math.html",
+      "/projects/programming/programming.html",
+      "/projects/synthdiy/synthdiy.html"
+    ]
+  },
+  {
+    "listing": "/projects/programming/programming.html",
+    "items": []
+  },
+  {
+    "listing": "/projects/eurorack/eurorack.html",
+    "items": [
+      "/projects/eurorack/finished/attenuvert/attenuvert.html",
+      "/projects/eurorack/finished/morphism/morphism.html",
+      "/projects/eurorack/finished/crossfade/crossfade.html",
+      "/projects/eurorack/finished/2hpmix/2HPmix.html",
+      "/projects/eurorack/finished/matrixmix/matrixmix.html",
+      "/projects/eurorack/finished/vca/vca.html",
+      "/projects/eurorack/wip/stereomix/stereomix.html",
+      "/projects/eurorack/wip/cv2midi/cv2midi.html"
+    ]
+  },
+  {
+    "listing": "/projects/math/math.html",
+    "items": [
+      "/projects/math/MA/MA.html",
+      "/projects/math/BA/BA.html",
+      "/projects/math/braids_seminar/braids_seminar.html"
+    ]
+  },
+  {
+    "listing": "/projects/synthdiy/synthdiy.html",
+    "items": [
+      "/projects/synthdiy/sniffer/sniffer.html",
+      "/projects/synthdiy/midimod/midimod.html"
+    ]
+  }
+]
