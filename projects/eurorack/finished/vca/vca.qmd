@@ -1,10 +1,10 @@
 ---
 title: "VCA"
 description: "2-channel VCA with normalized mixing."
-image: images/dummy.png
+image: images/dummy.PNG
 sort_order: 50
 ---
 
 This is a relatively simple module, namely a 2-channel VCA based on the Electrosmith 2164 VCA submodule (which, sadly, seems to be discontinued). While this submodule is already a full 2-channel VCA by itself that is only lacking external connections and controls, I decided to add a mixing stage via output jack normalizations (see the image below) Thus, if no jack is inserted to Output 1, the mix of both channel 1 and channel 2 is present at Output 2. Additionally, I added a way to chain multiples of this module via jumpers on the back, such that submixes of more channels can be formed.
 
-![](vca_pictogram.PNG)
+<!-- ![](vca_pictogram.PNG) -->

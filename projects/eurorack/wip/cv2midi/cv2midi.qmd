@@ -1,6 +1,6 @@
 ---
 title: "CV-to-MIDI converter"
-image: ./images/dummypic.png
+image: "./images/dummypic.PNG"
 sort_order: 90
 ---
 
