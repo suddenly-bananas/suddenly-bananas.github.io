@@ -1,14 +1,5 @@
 [
   {
-    "listing": "/projects.html",
-    "items": [
-      "/projects/eurorack/eurorack.html",
-      "/projects/math/math.html",
-      "/projects/programming/programming.html",
-      "/projects/synthdiy/synthdiy.html"
-    ]
-  },
-  {
     "listing": "/projects/programming/programming.html",
     "items": []
   },
@@ -26,11 +17,12 @@
     ]
   },
   {
-    "listing": "/projects/math/math.html",
+    "listing": "/projects.html",
     "items": [
-      "/projects/math/MA/MA.html",
-      "/projects/math/BA/BA.html",
-      "/projects/math/braids_seminar/braids_seminar.html"
+      "/projects/eurorack/eurorack.html",
+      "/projects/math/math.html",
+      "/projects/programming/programming.html",
+      "/projects/synthdiy/synthdiy.html"
     ]
   },
   {
@@ -38,6 +30,14 @@
     "items": [
       "/projects/synthdiy/sniffer/sniffer.html",
       "/projects/synthdiy/midimod/midimod.html"
+    ]
+  },
+  {
+    "listing": "/projects/math/math.html",
+    "items": [
+      "/projects/math/MA/MA.html",
+      "/projects/math/BA/BA.html",
+      "/projects/math/braids_seminar/braids_seminar.html"
     ]
   }
 ]

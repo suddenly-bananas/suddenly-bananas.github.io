@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Projects &gt;&gt; Eurorack Modules\n\n\n\n\n\n\n\n\n\nProjects &gt;&gt; Math\n\n\n\n\n\n\n\n\n\nProjects &gt;&gt; Programming\n\n\n\n\n\n\n\n\n\nProjects &gt;&gt; Synthesizer DIY\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/synthdiy/sniffer/sniffer.html",
-    "href": "projects/synthdiy/sniffer/sniffer.html",
-    "title": "Inductive Sniffer Prototype",
-    "section": "",
-    "text": "This is a small prototype consisting of a combination of the Elektrosluch and a Portable 9V Headphone Amplifier. It’s a fun party trick and can also be used as a feedback instrument when plugged into a speaker (since speakers use coils for generating the sound)."
-  },
-  {
     "objectID": "projects/programming/programming.html",
     "href": "projects/programming/programming.html",
     "title": "Projects >> Programming",
@@ -21,11 +7,11 @@
     "text": "¤¸¸.•´¯`•¸¸.•..&gt;&gt;   🎀  𝓊𝓃𝒹𝑒𝓇 𝒸♡𝓃𝓈𝓉𝓇𝓊𝒸𝓉𝒾🌞𝓃  🎀   &gt;&gt;..•.¸¸•`¯´•.¸¸¤\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "projects/math/MA/MA.html",
-    "href": "projects/math/MA/MA.html",
-    "title": "Master Thesis",
+    "objectID": "projects/math/braids_seminar/braids_seminar.html",
+    "href": "projects/math/braids_seminar/braids_seminar.html",
+    "title": "Small seminar write-up on braid groups",
     "section": "",
-    "text": "Click here to download the PDF of my master thesis."
+    "text": "This is a small write-up on the geometric/algebraic/topological nature of braid groups.\nClick here to download the PDF."
   },
   {
     "objectID": "projects/math/BA/BA.html",
@@ -35,74 +21,32 @@
     "text": "Click here to download the PDF of my bachelor thesis."
   },
   {
-    "objectID": "projects/eurorack/wip/cv2midi/cv2midi.html",
-    "href": "projects/eurorack/wip/cv2midi/cv2midi.html",
-    "title": "CV-to-MIDI converter",
+    "objectID": "projects/synthdiy/sniffer/sniffer.html",
+    "href": "projects/synthdiy/sniffer/sniffer.html",
+    "title": "Inductive Sniffer Prototype",
     "section": "",
-    "text": "Personally, I love the Korg Volca Drum. It has been the centerpiece of my setup for a long time now. In my opinion it has a potent sequencer and a versatile sound engine. But, as a modular addict, one thing I dearly miss is CV-control over the parameters. Luckily, it has a MIDI-input and controllable parameters via MIDI-CC. This was my initial motivation to design a CV-to-MIDI-module.\nIn the end, the module should be usable for any MIDI-controllable device, so I decided to make the module in itself “modular”: There should be one main-module handling the MIDI-messages, while the actual CV-input and maybe also offset generation is handled by additional expander modules. These expanders connect to the main module via ribbon cable on the back.\n¤¸¸.•´¯`•¸¸.•..&gt;&gt;   🎀  𝓊𝓃𝒹𝑒𝓇 𝒸♡𝓃𝓈𝓉𝓇𝓊𝒸𝓉𝒾🌞𝓃  🎀   &gt;&gt;..•.¸¸•`¯´•.¸¸¤"
+    "text": "This is a small prototype consisting of a combination of the Elektrosluch and a Portable 9V Headphone Amplifier. It’s a fun party trick and can also be used as a feedback instrument when plugged into a speaker (since speakers use coils for generating the sound)."
   },
   {
-    "objectID": "projects/eurorack/finished/morphism/morphism.html",
-    "href": "projects/eurorack/finished/morphism/morphism.html",
-    "title": "Morphism",
+    "objectID": "projects/eurorack/wip/stereomix/stereomix.html",
+    "href": "projects/eurorack/wip/stereomix/stereomix.html",
+    "title": "Expandable Stereo Mixer",
     "section": "",
-    "text": "This is a slight redesign of one channel of the Befaco Rampage in an 8HP-format. The challenge here was making the PCB-layout, since I was still using THT-components at that time, so a stack of 3 PCBs was necessary. After soldering and building 4 units of this module, I swore to myself to never design modules with THT-components anymore and to finally move on to SMD-components and SMD assembly services."
+    "text": "I wanted to have a dedicated “main output”-mixer in my rack for some time now. After settling for some basic features (stereo output, FX sends, individual channel controls, etc.) the question inevitably arises: How many mono and/or stereo channels should it have? A dilemma, since no matter what amount I choose, it will never be correct on the long run. Here’s why: First, I want my Eurorack setup to be fitting into a case of 7U and 84HP for ease of carrying it around with public transport and so on. Also, as is the case for many Eurorack users, my setup is never really “final” – the curse and blessing of Eurorack – and hence the exact number of mono/stereo channels needed will vary with time. In order to not waste valuable rack space, the natural solution is to make the mixer module itself modular. The idea is to have one main output module to which individual channel modules will be connected via ribbon cables on the back.\n\nWhile others have done this before, I wanted to realize my own approach to this concept. Here are my design choices:\n\n\n\nThe main output module should be stereo and include an auxiliary input for the possibility of easily including additional mixers into the main mix. I decided not to include a master volume knob, since I will feed the mixer into another module with dedicated volume control (e.g. compressor, headphone amp, dedicated output module, etc.) before going out of the rack.\nAs an enjoyer of effects, I settled for 3 FX send outputs. I also incorporate a lot of feedback loops into my patches and like to send different effects into each other, so I decided to not include an FX return on the main module – rather the FX return is done via a dedicated input channel of the mixer, thus allowing for easy feedbacking and effects into other effects.\nAdditionally, I want that the FX sends work with both mono and stereo signals. In practice this means:\n\nStereo signal to stereo FX is self-explanatory.\nMono signal to stereo FX: The mono signal is treated as stereo with respect to panning.\nStereo signal to mono FX: If channel R of the FX send is unplugged, channel L of the FX send receives the sum L+R of the input stereo signal.\nMono signal to mono FX: Again, a mono signal is treated as stereo with respect to panning, so the mono FX just receives the sum L+R, so the mono signal is always present independant of panning.\n\nIn my setup, most of the time I use two “mixing busses”:\n\nOne that enters the final mix as it is. This consists mainly of the kick drum and other percussion.\nOne that gets ducked/sidechained by another signal. Most of the time this consists of synth voices, drones and effects that get ducked by the kick drum. Thus, on the main output module, there are also two mixing busses, where one of them has a CV-input for ducking purposes. Each individual channel then has a switch to select if it gets added to the main mix directly or via the ducking bus. This allows uncomplicated mixing of ducked and unducked signals at the same time.\n\nThe main output should have a LED VU-meter with clipping indication.\n\n\n\n\n\nOf course there is a level control, In addition to that there is a level-LED as well as soft-clipping (via Zener-diodes) with LED clipping indicator.\nI don’t want to differentiate between stereo and mono channels. Thus, every channel is a stereo channel. For mono input, the signal just gets duplicated to the left and right channel. The balance knob (see next point) then becomes a panning control.\nThere’s a mute-switch (which works via JFETs and thus is clickless).\nThere’s a dedicated control for one of the FX sends. Due to panel space reasons, the other two FX sends have a shared level control, while it is decided via an additional switch, which of the two sends receive the signal. All in all, one channel can use at most 2 FX sends at the same time.\nThere’s a switch for controlling if the FX send is after-fade (i.e. after level control and mute) or pre-fade.\nThere’s a switch that decides if the channel is added directly to the main mix or to the ducking mix (see above).\nSince I often use guitar pedals as effects, each channel has an adjustable gain. I would love to have this as a dedicated front panel control, but because panel space is scarce, for now this has to be set via jumper connections on the back. Maybe this can be improved in future versions.\n\n\n\n\nSignal Flow of one channel"
   },
   {
-    "objectID": "projects/eurorack/finished/crossfade/crossfade.html",
-    "href": "projects/eurorack/finished/crossfade/crossfade.html",
-    "title": "Crossfader/Panner (1U)",
+    "objectID": "projects/eurorack/wip/stereomix/stereomix.html#design-philosophy",
+    "href": "projects/eurorack/wip/stereomix/stereomix.html#design-philosophy",
+    "title": "Expandable Stereo Mixer",
     "section": "",
-    "text": "Since I like to use a lot of effects in send/return shenanigans and feedback-mixing, I wanted to have a compact crossfader in 1U format, so that i can have it accessible in the front of my rack for hands-on usage. In order to make it a more flexible module, I decided to add some normalizations and a panning-mode, since panning is basically dual to crossfading. However, this brought some challenges for front panel-design, where I think I was at least semi-successful. With the normalizations, one can use the module as an attenuator or attenuverter, if needed."
+    "text": "I wanted to have a dedicated “main output”-mixer in my rack for some time now. After settling for some basic features (stereo output, FX sends, individual channel controls, etc.) the question inevitably arises: How many mono and/or stereo channels should it have? A dilemma, since no matter what amount I choose, it will never be correct on the long run. Here’s why: First, I want my Eurorack setup to be fitting into a case of 7U and 84HP for ease of carrying it around with public transport and so on. Also, as is the case for many Eurorack users, my setup is never really “final” – the curse and blessing of Eurorack – and hence the exact number of mono/stereo channels needed will vary with time. In order to not waste valuable rack space, the natural solution is to make the mixer module itself modular. The idea is to have one main output module to which individual channel modules will be connected via ribbon cables on the back.\n\nWhile others have done this before, I wanted to realize my own approach to this concept. Here are my design choices:\n\n\n\nThe main output module should be stereo and include an auxiliary input for the possibility of easily including additional mixers into the main mix. I decided not to include a master volume knob, since I will feed the mixer into another module with dedicated volume control (e.g. compressor, headphone amp, dedicated output module, etc.) before going out of the rack.\nAs an enjoyer of effects, I settled for 3 FX send outputs. I also incorporate a lot of feedback loops into my patches and like to send different effects into each other, so I decided to not include an FX return on the main module – rather the FX return is done via a dedicated input channel of the mixer, thus allowing for easy feedbacking and effects into other effects.\nAdditionally, I want that the FX sends work with both mono and stereo signals. In practice this means:\n\nStereo signal to stereo FX is self-explanatory.\nMono signal to stereo FX: The mono signal is treated as stereo with respect to panning.\nStereo signal to mono FX: If channel R of the FX send is unplugged, channel L of the FX send receives the sum L+R of the input stereo signal.\nMono signal to mono FX: Again, a mono signal is treated as stereo with respect to panning, so the mono FX just receives the sum L+R, so the mono signal is always present independant of panning.\n\nIn my setup, most of the time I use two “mixing busses”:\n\nOne that enters the final mix as it is. This consists mainly of the kick drum and other percussion.\nOne that gets ducked/sidechained by another signal. Most of the time this consists of synth voices, drones and effects that get ducked by the kick drum. Thus, on the main output module, there are also two mixing busses, where one of them has a CV-input for ducking purposes. Each individual channel then has a switch to select if it gets added to the main mix directly or via the ducking bus. This allows uncomplicated mixing of ducked and unducked signals at the same time.\n\nThe main output should have a LED VU-meter with clipping indication.\n\n\n\n\n\nOf course there is a level control, In addition to that there is a level-LED as well as soft-clipping (via Zener-diodes) with LED clipping indicator.\nI don’t want to differentiate between stereo and mono channels. Thus, every channel is a stereo channel. For mono input, the signal just gets duplicated to the left and right channel. The balance knob (see next point) then becomes a panning control.\nThere’s a mute-switch (which works via JFETs and thus is clickless).\nThere’s a dedicated control for one of the FX sends. Due to panel space reasons, the other two FX sends have a shared level control, while it is decided via an additional switch, which of the two sends receive the signal. All in all, one channel can use at most 2 FX sends at the same time.\nThere’s a switch for controlling if the FX send is after-fade (i.e. after level control and mute) or pre-fade.\nThere’s a switch that decides if the channel is added directly to the main mix or to the ducking mix (see above).\nSince I often use guitar pedals as effects, each channel has an adjustable gain. I would love to have this as a dedicated front panel control, but because panel space is scarce, for now this has to be set via jumper connections on the back. Maybe this can be improved in future versions.\n\n\n\n\nSignal Flow of one channel"
   },
   {
-    "objectID": "projects/eurorack/finished/2hpmix/2HPmix.html",
-    "href": "projects/eurorack/finished/2hpmix/2HPmix.html",
-    "title": "2HP 3-channel mixer",
-    "section": "",
-    "text": "This is a module I initially desidgned due to a request from a friend, who had a quite compact rack at that time. I took it as a fun challenge to design a compact and slim module. At its core, it’s a simple (DC-coupled) 3 input mixer with a bicolor LED at the output. The LED is useful when you use the module to mix CV sources. Also, on the back of the module i added solder jumpers with which channel 1 can be normalized to +12V, while channel 2 can be normalized to -12V. This can prove useful when mixing CV signals.\nIf I ever make a new version of this module, I would move the output jack to the top for more front panel stability."
-  },
-  {
-    "objectID": "music/music.html",
-    "href": "music/music.html",
-    "title": "Music",
-    "section": "",
-    "text": "This is my current synth setup:\n(Less chaotic photos coming soon. Also, actual music uploads coming soon…ish?)"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Sandro Erras",
-    "section": "",
-    "text": "This is me.\n\n\n  ________                      __  .__                           \n /  _____/______   ____   _____/  |_|__| ____    ____  ______     \n/   \\  __\\_  __ \\_/ __ \\_/ __ \\   __\\  |/    \\  / ___\\/  ___/     \n\\    \\_\\  \\  | \\/\\  ___/\\  ___/|  | |  |   |  \\/ /_/  &gt;___ \\      \n \\______  /__|    \\___  &gt;\\___  &gt;__| |__|___|  /\\___  /____  &gt; /\\  \n        \\/            \\/     \\/             \\//_____/     \\/  )/  \n___________                         .__  .__                      \n\\__    ___/___________ ___  __ ____ |  | |  |   ___________       \n  |    |  \\_  __ \\__  \\\\  \\/ // __ \\|  | |  | _/ __ \\_  __ \\      \n  |    |   |  | \\// __ \\\\   /\\  ___/|  |_|  |_\\  ___/|  | \\/      \n  |____|   |__|  (____  /\\_/  \\___  &gt;____/____/\\___  &gt;__|         \n                      \\/          \\/               \\/             \nYou entered the realm of some guy who likes math and bleepy bloopy sound machines :)\n I’m currently looking for a job!\n Contact me: contact.sandro.erras@posteo.de\n The majority of this website is still\n•._.••´¯``•.¸¸.•`   🎀  𝓌❁𝓇𝓀  𝒾𝓃  𝓅𝓇🏵𝑔𝓇𝑒𝓈𝓈  🎀   `•.¸¸.•``¯´••._.•\n(so please have some mercy with my poor soul)"
-  },
-  {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "CV",
-    "section": "",
-    "text": "Oct 2021 - Sep 2025\n\n\n\nTechnische Universität Berlin\n\nThesis title: Orderability of Groups and Spaces of Orders.\nFinal Grade: 1.4\n\n\n\n\n\nOct 2016 - Aug 2022\n\n\n\nTechnische Universität Berlin\n\nThesis title: Topological Complexity and Related Invariants.\nFinal Grade: 1.8\n\n\n\n\n\nJul 2012 - Aug 2016\n\n\n\nOTH Amberg-Weiden & Siemens AG Amberg\n\nThesis title: Feasibility Evaluation of a PROFINET-IO Device in a Compact Housing.\nFinal Grade (B. Eng): 1.7\nFinal Grade (Apprenticeship): 95/100"
-  },
-  {
-    "objectID": "cv.html#education",
-    "href": "cv.html#education",
-    "title": "CV",
-    "section": "",
-    "text": "Oct 2021 - Sep 2025\n\n\n\nTechnische Universität Berlin\n\nThesis title: Orderability of Groups and Spaces of Orders.\nFinal Grade: 1.4\n\n\n\n\n\nOct 2016 - Aug 2022\n\n\n\nTechnische Universität Berlin\n\nThesis title: Topological Complexity and Related Invariants.\nFinal Grade: 1.8\n\n\n\n\n\nJul 2012 - Aug 2016\n\n\n\nOTH Amberg-Weiden & Siemens AG Amberg\n\nThesis title: Feasibility Evaluation of a PROFINET-IO Device in a Compact Housing.\nFinal Grade (B. Eng): 1.7\nFinal Grade (Apprenticeship): 95/100"
-  },
-  {
-    "objectID": "cv.html#work-experience",
-    "href": "cv.html#work-experience",
-    "title": "CV",
-    "section": "Work Experience",
-    "text": "Work Experience\n\n\nDec 2025 - Oct 2026\n\n\nManu\nTechnische Universität Berlin\n\nThesis title: Orderability of Groups and Spaces of Orders.\nFinal Grade: 1.4"
-  },
-  {
-    "objectID": "lookingforjob.html",
-    "href": "lookingforjob.html",
-    "title": "Looking for jobs/projects",
-    "section": "",
-    "text": "I’m a Berlin-based mathematician, engineer, synthesizer builder and electronic musician. Here’s my life story:\n\nI started out with studying electrical engineering and information technology at OTH Amberg-Weiden.\nGot interested in university-level math through a course in DSP as a gateway drug.\nAfter finishing my B. Eng., I started studying mathematics at TU Berlin “just to try it out”.\nFast forward some years later, I have now finished my B. Sc. and M. Sc. in mathematics :)\nDuring my time as a math-apprentice, I used my skills from engineering to design and build Eurorack synthesizer modules on my own. As a neat side-effect, I also make electronic music with my own instruments for some time now.\n\nCurrently I am working with the lovely people at KOMA Elektronik in the manufacturing team, for which I am really glad that it worked out in the way it did. Unfortunately, working purely in manufacturing does not really align with my long-term goals, so we will part ways soon :’(\nI am now looking for my next step in research and development, either:\n\nIn the field of electronic musical instruments, audio technology or adjacent topics, where I can combine my background in mathematics, engineering, and music;\nOr in one of the numerous mathematical areas that matter to me, and in particular their applications. My main interests here lie in algebraic topology, topological data analysis, computational geometry/topology, differential geometry, harmonic analysis and algebra in general.\n\nHere you can find some projects I’m currently working on or that I did in the past.\nYou can reach me at: contact.sandro.erras@posteo.de"
+    "objectID": "projects/eurorack/wip/stereomix/stereomix.html#current-state",
+    "href": "projects/eurorack/wip/stereomix/stereomix.html#current-state",
+    "title": "Expandable Stereo Mixer",
+    "section": "Current State",
+    "text": "Current State\nThe schematic is almost complete and mostly verified on breadboard. Some smaller adjustments still need to be tested. The next step afterwards is making the PCB layout. Also the front panel designs have to be made."
   },
   {
     "objectID": "projects/eurorack/eurorack.html",
@@ -133,6 +77,20 @@
     "text": "Other Modules and Prototypes\n\n\n\nGroup Photo!\n\n\nHere you can find all the other modules I have built in the past, including prototypes and quickly hacked together one-ofs.\nThis is still\n¤¸¸.•´¯`•¸¸.•..&gt;&gt;   🎀  𝓊𝓃𝒹𝑒𝓇 𝒸♡𝓃𝓈𝓉𝓇𝓊𝒸𝓉𝒾🌞𝓃  🎀   &gt;&gt;..•.¸¸•`¯´•.¸¸¤\nActual photos of the modules coming soon!"
   },
   {
+    "objectID": "projects/eurorack/finished/matrixmix/matrixmix.html",
+    "href": "projects/eurorack/finished/matrixmix/matrixmix.html",
+    "title": "Matrix mixer",
+    "section": "",
+    "text": "This is basically just a realization of the matrix mixer II circuit from the Doepfer A-100 DIY page, but I think it looks cool, so it deserves its own page."
+  },
+  {
+    "objectID": "projects/eurorack/finished/morphism/morphism.html",
+    "href": "projects/eurorack/finished/morphism/morphism.html",
+    "title": "Morphism",
+    "section": "",
+    "text": "This is a slight redesign of one channel of the Befaco Rampage in an 8HP-format. The challenge here was making the PCB-layout, since I was still using THT-components at that time, so a stack of 3 PCBs was necessary. After soldering and building 4 units of this module, I swore to myself to never design modules with THT-components anymore and to finally move on to SMD-components and SMD assembly services."
+  },
+  {
     "objectID": "projects/eurorack/finished/attenuvert/attenuvert.html",
     "href": "projects/eurorack/finished/attenuvert/attenuvert.html",
     "title": "4-Channel Mixer/Attenuverter (1U)",
@@ -161,11 +119,32 @@
     "text": "Output Normalization Mixing\nAs in the Intellijel Quadratt, I wanted to implement mixing through normalization, i.e. if no cable is plugged into the output jack of some channel, the output signal shall automatically be mixed to the output of the next stage. “Simple!” I thought, naive as I am. “I just add the output of one channel through a 100k-resistor to the first opamp-stage of the next channel.” (At this point, you have to recall the basic mixing circuit at the end of the section about inverting opamp stages.) Let’s see what happens.\nFirst assume the switch of the next channel is in attenuation mode:\n\nLet \\(U_{prev}\\) be the signal from the previous channel and \\(V_{in}\\) be the input signal of the next channel, which is seen by the first opamp after scaling it with the potentiometer. If the sum of both signals \\(V_{in}+U_{prev}\\) is inside the range of +/-12V, everything works as expected as the first opamp stage outputs \\(-(V_{in}+U_{prev}),\\) which by the second opamp stage gets inverted again to arrive at \\(V_{in}+U_{prev}\\) on the output.\nIf \\(V_{in}+U_{prev}\\) exceeds the range of +/-12V, then the first opamp saturates. In this case this is no problem, since the excess current at the input can just flow through the pot to ground. So the voltage is just clamped at +/-12V in this case, which is also how the circuit is expected to work.\nNow assume we are in attenuvertion mode:\n\nWith the notation as above, if \\(V_{in}+U_{prev}\\) does not exceed +/-12V, everything works as before, the only difference being that the input voltage \\(U_{in}\\) is processed by both opamp stages as explained in the previous section about the attenuverter circuit.\nIf the first opamp goes into saturation, however, there are some drastic effects. Assume that \\(U_{prev}=12V,\\) so this signal alone is enough to saturate the opamp so that its output sits at -12V. Also assume that the pot is fully clockwise, so it can be regarded as a resistance of 10k from the negative terminal of the first opamp to the negative terminal of the second opamp. The current \\(I_1\\) through \\(R_1\\) can now not flow through \\(R_F,\\) since the first opamp is already in saturation and thus cannot go any lower than -12V, which would be necessary to sink more current. Hence, \\(I_1\\) must flow through the pot directly to the second opamp. Suppose we have \\(U_{in}=5V,\\) hence \\(I_1=5V/100k\\Omega = 50\\mu A.\\) In theory, we would want to have the sum \\(U_{in}+U_{prev}=17V,\\) which gets clamped to 12V, at the total output. But what actually happens is, that the second opamp sees \\(-12V/100k + 50\\mu A = -70\\mu A\\) at its negative input, hence it outputs 7V, to have a current of \\(7V/100k\\Omega = 70\\mu A\\) flowing from its output through the feedback resistor to its negative terminal. So, actually \\(U_{in}\\) got subtracted from \\(U_{prev},\\) totally not wat we aimed for!\nTo overcome this problem we changed the feedback resistor of the first opamp stage from 100k to 51k, effectively halving the voltage gain of this stage. This prevents the opamp from ever going into saturation mode if both \\(U_{prev}\\) and \\(U_{in}\\) stay inside a +/-12V-range. Then the resistor going from the first opamp to the second one also has to be changed to 51k, which has the effect that the second opamp has a gain of -2 for the voltage coming out of the first opamp, which reverses the gain halving we did before.\n\nNote that this is of course not necessary for the first channel, as there is normalization mixing in this case. In practice, this approach has the downside that inherent offset voltages as well as noise from the first opamp get amplified by a factor of 2 by the second opamp. But it has to be seen if this is even noticable in practice."
   },
   {
-    "objectID": "projects/eurorack/finished/matrixmix/matrixmix.html",
-    "href": "projects/eurorack/finished/matrixmix/matrixmix.html",
-    "title": "Matrix mixer",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Sandro Erras",
     "section": "",
-    "text": "This is basically just a realization of the matrix mixer II circuit from the Doepfer A-100 DIY page, but I think it looks cool, so it deserves its own page."
+    "text": "This is me.\n\n\n  ________                      __  .__                           \n /  _____/______   ____   _____/  |_|__| ____    ____  ______     \n/   \\  __\\_  __ \\_/ __ \\_/ __ \\   __\\  |/    \\  / ___\\/  ___/     \n\\    \\_\\  \\  | \\/\\  ___/\\  ___/|  | |  |   |  \\/ /_/  &gt;___ \\      \n \\______  /__|    \\___  &gt;\\___  &gt;__| |__|___|  /\\___  /____  &gt; /\\  \n        \\/            \\/     \\/             \\//_____/     \\/  )/  \n___________                         .__  .__                      \n\\__    ___/___________ ___  __ ____ |  | |  |   ___________       \n  |    |  \\_  __ \\__  \\\\  \\/ // __ \\|  | |  | _/ __ \\_  __ \\      \n  |    |   |  | \\// __ \\\\   /\\  ___/|  |_|  |_\\  ___/|  | \\/      \n  |____|   |__|  (____  /\\_/  \\___  &gt;____/____/\\___  &gt;__|         \n                      \\/          \\/               \\/             \nYou entered the realm of some guy who likes math and bleepy bloopy sound machines :)\n I’m currently looking for a job!\n Contact me: contact.sandro.erras@posteo.de\n The majority of this website is still\n•._.••´¯``•.¸¸.•`   🎀  𝓌❁𝓇𝓀  𝒾𝓃  𝓅𝓇🏵𝑔𝓇𝑒𝓈𝓈  🎀   `•.¸¸.•``¯´••._.•\n(so please have some mercy with my poor soul)"
+  },
+  {
+    "objectID": "lookingforjob.html",
+    "href": "lookingforjob.html",
+    "title": "Looking for jobs/projects",
+    "section": "",
+    "text": "I’m a Berlin-based mathematician, engineer, synthesizer builder and electronic musician. Here’s my life story:\n\nI started out with studying electrical engineering and information technology at OTH Amberg-Weiden.\nGot interested in university-level math through a course in DSP as a gateway drug.\nAfter finishing my B. Eng., I started studying mathematics at TU Berlin “just to try it out”.\nFast forward some years later, I have now finished my B. Sc. and M. Sc. in mathematics :)\nDuring my time as a math-apprentice, I used my skills from engineering to design and build Eurorack synthesizer modules on my own. As a neat side-effect, I also make electronic music with my own instruments for some time now.\n\nCurrently I am working with the lovely people at KOMA Elektronik in the manufacturing team, for which I am really glad that it worked out in the way it did. Unfortunately, working purely in manufacturing does not really align with my long-term goals, so we will part ways soon :’(\nI am now looking for my next step in research and development, either:\n\nIn the field of electronic musical instruments, audio technology or adjacent topics, where I can combine my background in mathematics, engineering, and music;\nOr in one of the numerous mathematical areas that matter to me, and in particular their applications. My main interests here lie in algebraic topology, topological data analysis, computational geometry/topology, differential geometry, harmonic analysis and algebra in general.\n\nHere you can find some projects I’m currently working on or that I did in the past.\nYou can reach me at: contact.sandro.erras@posteo.de"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Projects &gt;&gt; Eurorack Modules\n\n\n\n\n\n\n\n\n\nProjects &gt;&gt; Math\n\n\n\n\n\n\n\n\n\nProjects &gt;&gt; Programming\n\n\n\n\n\n\n\n\n\nProjects &gt;&gt; Synthesizer DIY\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "music/music.html",
+    "href": "music/music.html",
+    "title": "Music",
+    "section": "",
+    "text": "This is my current synth setup:\n(Less chaotic photos coming soon. Also, actual music uploads coming soon…ish?)"
   },
   {
     "objectID": "projects/eurorack/finished/vca/vca.html",
@@ -175,39 +154,25 @@
     "text": "This is a relatively simple module, namely a 2-channel VCA based on the Electrosmith 2164 VCA submodule (which, sadly, seems to be discontinued). While this submodule is already a full 2-channel VCA by itself that is only lacking external connections and controls, I decided to add a mixing stage via output jack normalizations (see the image below) Thus, if no jack is inserted to Output 1, the mix of both channel 1 and channel 2 is present at Output 2. Additionally, I added a way to chain multiples of this module via jumpers on the back, such that submixes of more channels can be formed."
   },
   {
-    "objectID": "projects/eurorack/wip/stereomix/stereomix.html",
-    "href": "projects/eurorack/wip/stereomix/stereomix.html",
-    "title": "Expandable Stereo Mixer",
+    "objectID": "projects/eurorack/finished/2hpmix/2HPmix.html",
+    "href": "projects/eurorack/finished/2hpmix/2HPmix.html",
+    "title": "2HP 3-channel mixer",
     "section": "",
-    "text": "I wanted to have a dedicated “main output”-mixer in my rack for some time now. After settling for some basic features (stereo output, FX sends, individual channel controls, etc.) the question inevitably arises: How many mono and/or stereo channels should it have? A dilemma, since no matter what amount I choose, it will never be correct on the long run. Here’s why: First, I want my Eurorack setup to be fitting into a case of 7U and 84HP for ease of carrying it around with public transport and so on. Also, as is the case for many Eurorack users, my setup is never really “final” – the curse and blessing of Eurorack – and hence the exact number of mono/stereo channels needed will vary with time. In order to not waste valuable rack space, the natural solution is to make the mixer module itself modular. The idea is to have one main output module to which individual channel modules will be connected via ribbon cables on the back.\n\nWhile others have done this before, I wanted to realize my own approach to this concept. Here are my design choices:\n\n\n\nThe main output module should be stereo and include an auxiliary input for the possibility of easily including additional mixers into the main mix. I decided not to include a master volume knob, since I will feed the mixer into another module with dedicated volume control (e.g. compressor, headphone amp, dedicated output module, etc.) before going out of the rack.\nAs an enjoyer of effects, I settled for 3 FX send outputs. I also incorporate a lot of feedback loops into my patches and like to send different effects into each other, so I decided to not include an FX return on the main module – rather the FX return is done via a dedicated input channel of the mixer, thus allowing for easy feedbacking and effects into other effects.\nAdditionally, I want that the FX sends work with both mono and stereo signals. In practice this means:\n\nStereo signal to stereo FX is self-explanatory.\nMono signal to stereo FX: The mono signal is treated as stereo with respect to panning.\nStereo signal to mono FX: If channel R of the FX send is unplugged, channel L of the FX send receives the sum L+R of the input stereo signal.\nMono signal to mono FX: Again, a mono signal is treated as stereo with respect to panning, so the mono FX just receives the sum L+R, so the mono signal is always present independant of panning.\n\nIn my setup, most of the time I use two “mixing busses”:\n\nOne that enters the final mix as it is. This consists mainly of the kick drum and other percussion.\nOne that gets ducked/sidechained by another signal. Most of the time this consists of synth voices, drones and effects that get ducked by the kick drum. Thus, on the main output module, there are also two mixing busses, where one of them has a CV-input for ducking purposes. Each individual channel then has a switch to select if it gets added to the main mix directly or via the ducking bus. This allows uncomplicated mixing of ducked and unducked signals at the same time.\n\nThe main output should have a LED VU-meter with clipping indication.\n\n\n\n\n\nOf course there is a level control, In addition to that there is a level-LED as well as soft-clipping (via Zener-diodes) with LED clipping indicator.\nI don’t want to differentiate between stereo and mono channels. Thus, every channel is a stereo channel. For mono input, the signal just gets duplicated to the left and right channel. The balance knob (see next point) then becomes a panning control.\nThere’s a mute-switch (which works via JFETs and thus is clickless).\nThere’s a dedicated control for one of the FX sends. Due to panel space reasons, the other two FX sends have a shared level control, while it is decided via an additional switch, which of the two sends receive the signal. All in all, one channel can use at most 2 FX sends at the same time.\nThere’s a switch for controlling if the FX send is after-fade (i.e. after level control and mute) or pre-fade.\nThere’s a switch that decides if the channel is added directly to the main mix or to the ducking mix (see above).\nSince I often use guitar pedals as effects, each channel has an adjustable gain. I would love to have this as a dedicated front panel control, but because panel space is scarce, for now this has to be set via jumper connections on the back. Maybe this can be improved in future versions.\n\n\n\n\nSignal Flow of one channel"
+    "text": "This is a module I initially desidgned due to a request from a friend, who had a quite compact rack at that time. I took it as a fun challenge to design a compact and slim module. At its core, it’s a simple (DC-coupled) 3 input mixer with a bicolor LED at the output. The LED is useful when you use the module to mix CV sources. Also, on the back of the module i added solder jumpers with which channel 1 can be normalized to +12V, while channel 2 can be normalized to -12V. This can prove useful when mixing CV signals.\nIf I ever make a new version of this module, I would move the output jack to the top for more front panel stability."
   },
   {
-    "objectID": "projects/eurorack/wip/stereomix/stereomix.html#design-philosophy",
-    "href": "projects/eurorack/wip/stereomix/stereomix.html#design-philosophy",
-    "title": "Expandable Stereo Mixer",
+    "objectID": "projects/eurorack/finished/crossfade/crossfade.html",
+    "href": "projects/eurorack/finished/crossfade/crossfade.html",
+    "title": "Crossfader/Panner (1U)",
     "section": "",
-    "text": "I wanted to have a dedicated “main output”-mixer in my rack for some time now. After settling for some basic features (stereo output, FX sends, individual channel controls, etc.) the question inevitably arises: How many mono and/or stereo channels should it have? A dilemma, since no matter what amount I choose, it will never be correct on the long run. Here’s why: First, I want my Eurorack setup to be fitting into a case of 7U and 84HP for ease of carrying it around with public transport and so on. Also, as is the case for many Eurorack users, my setup is never really “final” – the curse and blessing of Eurorack – and hence the exact number of mono/stereo channels needed will vary with time. In order to not waste valuable rack space, the natural solution is to make the mixer module itself modular. The idea is to have one main output module to which individual channel modules will be connected via ribbon cables on the back.\n\nWhile others have done this before, I wanted to realize my own approach to this concept. Here are my design choices:\n\n\n\nThe main output module should be stereo and include an auxiliary input for the possibility of easily including additional mixers into the main mix. I decided not to include a master volume knob, since I will feed the mixer into another module with dedicated volume control (e.g. compressor, headphone amp, dedicated output module, etc.) before going out of the rack.\nAs an enjoyer of effects, I settled for 3 FX send outputs. I also incorporate a lot of feedback loops into my patches and like to send different effects into each other, so I decided to not include an FX return on the main module – rather the FX return is done via a dedicated input channel of the mixer, thus allowing for easy feedbacking and effects into other effects.\nAdditionally, I want that the FX sends work with both mono and stereo signals. In practice this means:\n\nStereo signal to stereo FX is self-explanatory.\nMono signal to stereo FX: The mono signal is treated as stereo with respect to panning.\nStereo signal to mono FX: If channel R of the FX send is unplugged, channel L of the FX send receives the sum L+R of the input stereo signal.\nMono signal to mono FX: Again, a mono signal is treated as stereo with respect to panning, so the mono FX just receives the sum L+R, so the mono signal is always present independant of panning.\n\nIn my setup, most of the time I use two “mixing busses”:\n\nOne that enters the final mix as it is. This consists mainly of the kick drum and other percussion.\nOne that gets ducked/sidechained by another signal. Most of the time this consists of synth voices, drones and effects that get ducked by the kick drum. Thus, on the main output module, there are also two mixing busses, where one of them has a CV-input for ducking purposes. Each individual channel then has a switch to select if it gets added to the main mix directly or via the ducking bus. This allows uncomplicated mixing of ducked and unducked signals at the same time.\n\nThe main output should have a LED VU-meter with clipping indication.\n\n\n\n\n\nOf course there is a level control, In addition to that there is a level-LED as well as soft-clipping (via Zener-diodes) with LED clipping indicator.\nI don’t want to differentiate between stereo and mono channels. Thus, every channel is a stereo channel. For mono input, the signal just gets duplicated to the left and right channel. The balance knob (see next point) then becomes a panning control.\nThere’s a mute-switch (which works via JFETs and thus is clickless).\nThere’s a dedicated control for one of the FX sends. Due to panel space reasons, the other two FX sends have a shared level control, while it is decided via an additional switch, which of the two sends receive the signal. All in all, one channel can use at most 2 FX sends at the same time.\nThere’s a switch for controlling if the FX send is after-fade (i.e. after level control and mute) or pre-fade.\nThere’s a switch that decides if the channel is added directly to the main mix or to the ducking mix (see above).\nSince I often use guitar pedals as effects, each channel has an adjustable gain. I would love to have this as a dedicated front panel control, but because panel space is scarce, for now this has to be set via jumper connections on the back. Maybe this can be improved in future versions.\n\n\n\n\nSignal Flow of one channel"
+    "text": "Since I like to use a lot of effects in send/return shenanigans and feedback-mixing, I wanted to have a compact crossfader in 1U format, so that i can have it accessible in the front of my rack for hands-on usage. In order to make it a more flexible module, I decided to add some normalizations and a panning-mode, since panning is basically dual to crossfading. However, this brought some challenges for front panel-design, where I think I was at least semi-successful. With the normalizations, one can use the module as an attenuator or attenuverter, if needed."
   },
   {
-    "objectID": "projects/eurorack/wip/stereomix/stereomix.html#current-state",
-    "href": "projects/eurorack/wip/stereomix/stereomix.html#current-state",
-    "title": "Expandable Stereo Mixer",
-    "section": "Current State",
-    "text": "Current State\nThe schematic is almost complete and mostly verified on breadboard. Some smaller adjustments still need to be tested. The next step afterwards is making the PCB layout. Also the front panel designs have to be made."
-  },
-  {
-    "objectID": "projects/math/braids_seminar/braids_seminar.html",
-    "href": "projects/math/braids_seminar/braids_seminar.html",
-    "title": "Small seminar write-up on braid groups",
+    "objectID": "projects/eurorack/wip/cv2midi/cv2midi.html",
+    "href": "projects/eurorack/wip/cv2midi/cv2midi.html",
+    "title": "CV-to-MIDI converter",
     "section": "",
-    "text": "This is a small write-up on the geometric/algebraic/topological nature of braid groups.\nClick here to download the PDF."
-  },
-  {
-    "objectID": "projects/math/math.html",
-    "href": "projects/math/math.html",
-    "title": "Projects >> Math",
-    "section": "",
-    "text": "Master Thesis\n\n\nOrderability of Groups and Spaces of Orders. [Algebra, Group Theory, Topology]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBachelor Thesis\n\n\nTopological Complexity and Related Invariants. [Topological Robotics]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSmall seminar write-up on braid groups\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Personally, I love the Korg Volca Drum. It has been the centerpiece of my setup for a long time now. In my opinion it has a potent sequencer and a versatile sound engine. But, as a modular addict, one thing I dearly miss is CV-control over the parameters. Luckily, it has a MIDI-input and controllable parameters via MIDI-CC. This was my initial motivation to design a CV-to-MIDI-module.\nIn the end, the module should be usable for any MIDI-controllable device, so I decided to make the module in itself “modular”: There should be one main-module handling the MIDI-messages, while the actual CV-input and maybe also offset generation is handled by additional expander modules. These expanders connect to the main module via ribbon cable on the back.\n¤¸¸.•´¯`•¸¸.•..&gt;&gt;   🎀  𝓊𝓃𝒹𝑒𝓇 𝒸♡𝓃𝓈𝓉𝓇𝓊𝒸𝓉𝒾🌞𝓃  🎀   &gt;&gt;..•.¸¸•`¯´•.¸¸¤"
   },
   {
     "objectID": "projects/synthdiy/midimod/midimod.html",
@@ -222,5 +187,19 @@
     "title": "Projects >> Synthesizer DIY",
     "section": "",
     "text": "¤¸¸.•´¯`•¸¸.•..&gt;&gt;   🎀  𝓊𝓃𝒹𝑒𝓇 𝒸♡𝓃𝓈𝓉𝓇𝓊𝒸𝓉𝒾🌞𝓃  🎀   &gt;&gt;..•.¸¸•`¯´•.¸¸¤\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInductive Sniffer Prototype\n\n\nIt do the 👃 for frequencies.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMIDI-Out for Volca Drum\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/math/math.html",
+    "href": "projects/math/math.html",
+    "title": "Projects >> Math",
+    "section": "",
+    "text": "Master Thesis\n\n\nOrderability of Groups and Spaces of Orders. [Algebra, Group Theory, Topology]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBachelor Thesis\n\n\nTopological Complexity and Related Invariants. [Topological Robotics]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSmall seminar write-up on braid groups\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/math/MA/MA.html",
+    "href": "projects/math/MA/MA.html",
+    "title": "Master Thesis",
+    "section": "",
+    "text": "Click here to download the PDF of my master thesis."
   }
 ]
